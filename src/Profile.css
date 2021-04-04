@@ -1,0 +1,13 @@
+.Profile {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    width: 40%;
+    height: auto;
+  }
+  
+  .Profile > img {
+    width: 200px;
+    height: 200px;
+  }
