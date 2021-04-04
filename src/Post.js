@@ -7,14 +7,36 @@ const postInfo = {
   description: "This is the description of the post",
 };
 
-const Post = () => {
-  return (
+class Post extends React.Component{
+  constructor(){
+    super()
+    this.title = postInfo.title
+    this.imageLink = postInfo.imageLink
+    this.description = postInfo.description
+  }
+  render(){
+    return (
     <div className="Post" data-testid="post">
-      <p>{postInfo.title}</p>
-      <img src={postInfo.imageLink} alt="post" />
-      <p>{postInfo.description}</p>
-    </div>
-  );
-};
+    <p>{this.title}</p>
+    <img src={this.imageLink} alt="post" />
+    <p>{this.description}</p>
+  </div>
+    )
+  }
+}
+
+
+
+
+
+// const Post = () => {
+//   return (
+//     <div className="Post" data-testid="post">
+//       <p>{postInfo.title}</p>
+//       <img src={postInfo.imageLink} alt="post" />
+//       <p>{postInfo.description}</p>
+//     </div>
+//   );
+// };
 
 export default Post;
