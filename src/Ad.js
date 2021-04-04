@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React from "react";
 import "./Ad.css";
 
@@ -16,16 +17,33 @@ export const adInfo = [
   },
 ];
 
-const Ad = () => {
-  const index = Math.floor(Math.random() * adInfo.length);
-  const ad = adInfo[index];
-
-  return (
-    <div className="Ad" data-testid="ad">
-      <img src={ad.src} alt="cool ad" />
-      <p data-testid="ad-text">{ad.text}</p>
-    </div>
-  );
-};
+class Ad extends React.Component {
+  constructor() {
+    super();
+    const index = Math.floor(Math.random() * adInfo.length);
+    this.src = adInfo[index].src
+    this.text = adInfo[index].text
+  }
+  render() {
+    return (
+      <div className="Ad" data-testid="ad">
+        <img src={this.src} alt="cool ad" />
+        <p data-testid="ad-text">{this.text}</p>
+      </div>
+    );
+  }
+}
 
 export default Ad;
+
+// const Ad = () => {
+//   const index = Math.floor(Math.random() * adInfo.length);
+//   const ad = adInfo[index];
+
+//   return (
+//     <div className="Ad" data-testid="ad">
+//       <img src={ad.src} alt="cool ad" />
+//       <p data-testid="ad-text">{ad.text}</p>
+//     </div>
+//   );
+// };
