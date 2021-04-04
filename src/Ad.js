@@ -17,7 +17,7 @@ export const adInfo = [
 ];
 
 
-class Ads extends React.Component{
+class Ad extends React.Component{
   constructor() {
     super();	
 	}
@@ -49,4 +49,4 @@ class Ads extends React.Component{
 //   );
 // };
 
-export default Ads;
+export default Ad;
