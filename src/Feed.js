@@ -1,5 +1,5 @@
 import React from "react";
-import Ad from "./Ad.js";
+import Ads from "./Ad.js";
 import Post from "./Post.js";
 import "./Feed.css";
 
@@ -9,9 +9,9 @@ const Feed = () => {
       <h2>Feed</h2>
       <Post />
       <Post />
-      <Ad />
+      <Ads />
       <Post />
-      <Ad />
+      <Ads />
       <Post />
     </div>
   );
