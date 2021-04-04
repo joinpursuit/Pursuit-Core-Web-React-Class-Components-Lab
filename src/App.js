@@ -5,6 +5,9 @@ import Feed from "./Feed";
 import Profile from "./Profile";
 
 class App extends React.Component {
+  constructor(){
+    super();
+  }
   render() {
     return (
       <div className="App-Div">

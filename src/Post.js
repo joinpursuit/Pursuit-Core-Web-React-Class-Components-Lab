@@ -8,6 +8,9 @@ const postInfo = {
 };
 
 class Post extends React.Component {
+  constructor(){
+    super();
+  }
   render() {
     return (
       <div className="Post" data-testid="post">

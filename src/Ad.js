@@ -17,6 +17,9 @@ export const adInfo = [
 ];
 
 class Ad extends React.Component {
+  constructor(){
+    super();
+  }
   render() {
     const index = Math.floor(Math.random() * adInfo.length);
     const ad = adInfo[index];

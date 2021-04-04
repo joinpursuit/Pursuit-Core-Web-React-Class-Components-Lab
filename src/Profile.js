@@ -8,6 +8,9 @@ const profileInfo = {
 };
 
 class Profile extends React.Component {
+  constructor(){
+    super();
+  }
   render() {
     return (
       <div className="Profile" data-testid="profile">

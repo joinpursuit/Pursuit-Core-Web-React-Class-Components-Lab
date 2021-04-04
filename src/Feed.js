@@ -4,6 +4,9 @@ import Post from "./Post.js";
 import "./Feed.css";
 
 class Feed extends React.Component {
+  constructor(){
+    super();
+  }
   render() {
     return (
       <div className="Feed" data-testid="feed">
