@@ -1,0 +1,7 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    border: black solid 8px;
+    height: 100%;
+}
+
