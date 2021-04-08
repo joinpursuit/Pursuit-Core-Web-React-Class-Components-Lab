@@ -32,7 +32,7 @@ import "./Ad.css";
 
 import React, { Component } from 'react'
 
-const adInfo = [
+export const adInfo = [
   {
     src: "https://placeimg.com/200/200/arch",
     text: "Doctors hate THIS ONE WEIRD TRICK",
