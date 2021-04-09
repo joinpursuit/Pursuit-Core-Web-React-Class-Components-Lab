@@ -12,7 +12,7 @@ class Post extends Component {
   }
   render() {
     return (
-      <div>
+      <div data-testid="post">
         <h2>{this.title}</h2>
         <img src={this.imageLink} alt="post"></img>
         <p>{this.description}</p>
