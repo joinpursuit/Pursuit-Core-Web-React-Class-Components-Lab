@@ -1,5 +1,7 @@
 // import React from "react";
 import "./Ad.css";
+import React, { Component } from 'react'
+
 
 export const adInfo = [
   {
@@ -16,7 +18,6 @@ export const adInfo = [
   },
 ];
 
-import React, { Component } from 'react'
 
 export default class Ad extends Component {
   constructor() {
