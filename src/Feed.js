@@ -4,8 +4,8 @@ import Post from "./Post.js";
 import "./Feed.css";
 
 class Feed extends React.Component {
-  constructor();
-  super();
+  // constructor();
+  // super();
   render () {
   return (
     <div className="Feed" data-testid="feed">
@@ -20,5 +20,7 @@ class Feed extends React.Component {
   );
   }
 };
+
+
 
 export default Feed;
