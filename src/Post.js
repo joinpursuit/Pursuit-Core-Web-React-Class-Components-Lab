@@ -7,7 +7,12 @@ const postInfo = {
   description: "This is the description of the post",
 };
 
-const Post = () => {
+class Post extends React.Component{
+  constructor(){
+    super()
+  }
+  render(){
+  
   return (
     <div className="Post" data-testid="post">
       <p>{postInfo.title}</p>
@@ -16,5 +21,5 @@ const Post = () => {
     </div>
   );
 };
-
+};
 export default Post;
