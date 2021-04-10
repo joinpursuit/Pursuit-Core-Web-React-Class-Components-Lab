@@ -1,5 +1,5 @@
 // import React from "react";
-// import "./Post.css";
+import "./Post.css";
 
 // const postInfo = {
 //   title: "Sample Post Title",
@@ -39,10 +39,12 @@ export default class Post extends Component {
   render() {
     return (
       <div className="Post" data-testid="post">
-      <p>{this.postInfo.title}</p>
-      <img src={this.postInfo.imageLink} alt="post" />
-      <p>{this.postInfo.description}</p>
-    </div>
+        <p>{this.postInfo.title}</p>
+        <div className="image-div">
+          <img src={this.postInfo.imageLink} alt="post" />
+        </div>
+        <p>{this.postInfo.description}</p>
+      </div>
     )
   }
 }
