@@ -12,6 +12,7 @@ class Post extends Component {
     };
   }
   render() {
+  const {postInfo} = this.postInfo
     return (
       <div className="Post" data-testid="post">
         <p>{this.postInfo.title}</p>
