@@ -19,3 +19,4 @@ describe("<App />", () => {
     expect(isClassComponent(App)).toBe(true);
   });
 });
+
